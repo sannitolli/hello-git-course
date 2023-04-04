@@ -1,6 +1,8 @@
-git remote add uusietävarasto https://course-gitlab.tuni.fi/git-course/basics-materials.git
-git fetch uusietävarasto
-git merge --allow-unrelated-histories uusietävarasto/omatyöskentely
-git status
+git remote add basics-materials https://course-gitlab.tuni.fi/git-course/basics-materials.git
+git fetch basics-materials
+git merge basics-materials/master --allow-unrelated-histories
+git config pull.rebase false
+git log basics/mergesort.py
+git checkout basics-materials/master -- basics/mergesort.py
+git add basics/mergesort.py
 git commit -m
-git push uusietävarasto
