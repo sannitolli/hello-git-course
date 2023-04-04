@@ -1,0 +1,10 @@
+git add mergesort.py
+git commit -m 'Lisätty mergesort.py-tiedosto
+git branch omatyöskentely
+git checkout omatyöskentely
+git remote add uusietävarasto https://course-gitlab.tuni.fi/git-course/basics-materials.git
+git fetch uusietävarasto
+git merge --allow-unrelated-histories uusietävarasto/omatyöskentely
+git status
+git commit -m
+git push uusietävarasto
