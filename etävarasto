@@ -1,13 +1,12 @@
 git remote add intermediate-branches https://course-gitlab.tuni.fi/git-course/intermediate-branches.git
-git fetch intermediate-branches
-git merge intermediate-branches/master --allow-unrelated-histories
-git checkout -b feature/create-awesome origin/feature/create-awesome
-echo "print(\"Hello from feature\")" >> hello_world.py
+git pull --allow-unrelated-histories intermediate-branches main
+git checkout -b feature/create-awesome
+echo 'print("Hello from feature")' >> hello_world.py
 git add hello_world.py
-git commit -m "Add 'Hello from feature' to hello_world.py"
-git push origin feature/create-awesome
+git commit -m "Add feature print statement"
+git push -u origin feature/create-awesome
 git checkout -b release feature/create-awesome
-echo "print(\"Hello from release\")" >> hello_world.py
+echo 'print("Hello from release")' >> hello_world.py
 git add hello_world.py
-git commit -m "Add 'Hello from release' to hello_world.py"
-git push origin release
+git commit -m "Add release print statement"
+git push -u origin release
