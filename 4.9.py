@@ -1,7 +1,3 @@
-# Luo uusi etätietovarasto ja siirry sen hakemistoon
-git clone <oma-repositorio>
-cd <oma-repositorio>
-
 # Lisää uusi etätietovarasto advanced-rebase
 git remote add advanced-rebase https://course-gitlab.tuni.fi/git-course/advanced-rebase.git
 
