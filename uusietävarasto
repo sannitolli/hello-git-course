@@ -2,7 +2,7 @@ git remote add basics-materials https://course-gitlab.tuni.fi/git-course/basics-
 git fetch basics-materials
 git merge basics-materials/master --allow-unrelated-histories
 git config pull.rebase false
-git log basics/mergesort.py
-git checkout basics-materials/master -- basics/mergesort.py
-git add basics/mergesort.py
+git log https://course-gitlab.tuni.fi/git-course/basics-materials/-/commit/dd8c56cede9b109c1df7bda13abc1b1b7b79ed0b
+git checkout https://course-gitlab.tuni.fi/git-course/basics-materials/-/commit/dd8c56cede9b109c1df7bda13abc1b1b7b79ed0b
+git add https://course-gitlab.tuni.fi/git-course/basics-materials/-/commit/dd8c56cede9b109c1df7bda13abc1b1b7b79ed0b
 git commit -m
